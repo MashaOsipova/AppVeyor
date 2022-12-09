@@ -20,9 +20,10 @@ class MobileBankApiTestV6 {
 
     @Test
     void shouldReturnDemoAccounts() {
-
+        // Given - When - Then
+        // Предусловия
         given()
-                .spec(requestSpec)
+                .spec(requestSpec) // со спецификацией проще (особенно когда много тестов)
                 // Выполняемые действия
                 .when()
                 .get("/demo/accounts")
